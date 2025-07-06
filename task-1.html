@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bhargavi | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0f0f17;
+      color: white;
+      overflow-x: hidden;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #6C63FF;
+    }
+    .project {
+      background: #1e1e2f;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #6C63FF;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><strong>Bhargavi</strong></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1 class="reveal">Hi, I'm Bhargavi</h1>
+    <p class="reveal">Frontend Developer with a love for smooth UI and web animations.</p>
+    <a href="#projects" class="btn reveal">See My Work</a>
+  </section>
+
+  <section id="about">
+    <h2 class="reveal">About Me</h2>
+    <p class="reveal">I create beautiful, functional websites using HTML, CSS, JS, and libraries like GSAP.</p>
+  </section>
+
+  <section id="projects">
+    <h2 class="reveal">Projects</h2>
+    <div class="project reveal">
+      <h3>Portfolio Website with Advanced Animations</h3>
+      <p>A personal portfolio built with modern CSS and GSAP for seamless scroll effects.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="reveal">Contact</h2>
+    <p class="reveal">Email: <a href="mailto:bhargavibhargavi2354@gmail.com">bhargavibhargavi2354@gmail.com</a></p>
+    <p class="reveal">Phone: 9701817416</p>
+  </section>
+
+  <footer style="text-align:center; padding: 2rem; color: #aaa;">© 2025 Bhargavi</footer>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script>
+    gsap.from(".reveal", {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      stagger: 0.2,
+      ease: "power2.out"
+    });
+  </script>
+</body>
+</html>
